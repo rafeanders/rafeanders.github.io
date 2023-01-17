@@ -1,0 +1,146 @@
+
+body {
+	background-color: black;
+}
+
+#container {
+	background-color: #fdfcf5;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 30px 15px;
+	box-shadow: 0 0 5px 5px #c2d6d1;
+	font-family: Courier New;
+	font-weight: bold;
+}
+
+.header_container {
+	padding-top: 15px;
+	align-items: center;
+	font-family: Bahnschrift SemiBold;
+}
+
+#professional_summary {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#core_competencies {
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#professional_experience {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#relevant_projects {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#education {
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#list_container {
+
+}
+
+h1.name_text {
+	text-align: center;
+}
+
+p.contact_info:hover {
+	text-shadow: 1px 1px 10px #c2d6d1;
+}
+
+h3.section_header {
+	text-align: center;
+	background-color: #c2d6d1;
+}
+
+h4.subsection_header {
+	text-align: center;
+}
+
+p.contact_info {
+	text-align: center;	
+}
+
+p.section_content {
+}
+
+p.competencies_content {
+	display: flex;
+	align-items: center;
+}
+
+.competencies_content {
+	display: flex;
+	text-align: middle;
+	align-items: center;
+}
+
+table {	
+}
+
+td {	
+}
+
+table.competencies {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.image_checkmark {
+	max-height: 25px;
+	max-width: 25px;
+}
+
+ul {
+	margin-left: 0;
+}
+
+.preview_box {
+	display: none;
+	width: 100%;
+}
+
+a:hover + .preview_box, .preview_box:hover {
+	display: block;
+	position: relative;
+	z-index: 100;
+}
+
+.shine_box {
+	padding-right: 14px;
+	padding-left: 15px;
+	transform: translate(-50%, -50%);
+	height: 25px;
+	width: 25px;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px rgba(194, 214, 209, 0.1)
+}
+
+.shine_box:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -300px;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	transform: skewX(-30deg);
+	transition: 2.5s;
+}
+
+.shine_box:hover:before {
+	left: 250px;
+	background: rgba(255, 255, 255, 0.2);
+}
